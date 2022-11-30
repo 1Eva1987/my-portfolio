@@ -1,3 +1,6 @@
+:root {
+  --primaryColor: darkcyan;
+}
 * {
   box-sizing: border-box;
 }
@@ -5,7 +8,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -21,3 +25,29 @@ h6 {
 p {
   margin: 0;
 }
+/* header with nav */
+header {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  background: black;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header h1 {
+  background-color: var(--primaryColor);
+  margin: 10px 0px 20px 0;
+  padding: 0 5px 0 30px;
+}
+nav {
+  padding-right: 5%;
+}
+nav a {
+  color: var(--primaryColor);
+  text-decoration: none;
+  padding: 0 10px;
+  text-transform: capitalize;
+  border-bottom: 3px solid var(--primaryColor);
+}
+/* end of header with nav */
