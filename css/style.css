@@ -1,6 +1,7 @@
 :root {
-  --primaryColor: rgb(3, 137, 137);
+  --primaryColor: rgb(251, 251, 251, 0.5);
   --secondaryColor: black;
+  --thirdColor: white;
 }
 html {
   scroll-behavior: smooth;
@@ -15,7 +16,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
-  background: rgb(248, 248, 248);
+  background: var(--secondaryColor);
 }
 
 h1,
@@ -28,6 +29,7 @@ h6 {
 }
 
 p {
+  color: var(--thirdColor);
   margin: 0;
   /* text-align: justify; */
   /* padding-right: 20px; */
@@ -43,7 +45,7 @@ header {
   flex-wrap: wrap;
 }
 header h1 {
-  background-color: var(--primaryColor);
+  background-color: var(--thirdColor);
   margin: 10px 0 20px 0;
   padding: 0 5px 0 30px;
 }
@@ -51,11 +53,11 @@ nav {
   padding-right: 5%;
 }
 nav a {
-  color: var(--primaryColor);
+  color: var(--thirdColor);
   text-decoration: none;
   padding: 0 10px;
   text-transform: capitalize;
-  border-bottom: 3px solid var(--primaryColor);
+  border-bottom: 3px solid var(--thirdColor);
   font-weight: bold;
   white-space: nowrap;
 }
@@ -72,8 +74,7 @@ nav a {
   align-items: flex-end;
 }
 .hero-banner h2 {
-  /* height: 20vh;
-  width: auto; */
+  /* color: var(--thirdColor); */
   padding: 5px 10px 0 10px;
   margin: 20px 50px;
   background-color: var(--primaryColor);
@@ -91,12 +92,13 @@ nav a {
   grid-template-rows: auto auto auto;
 }
 .page-section h2 {
+  color: var(--thirdColor);
   text-align: end;
   padding-left: 10px;
   justify-self: flex-end;
   margin: 0 20px 0 0;
   padding-right: 20px;
-  border-right: 2px solid var(--secondaryColor);
+  border-right: 2px solid var(--thirdColor);
 }
 /* end of grid with sections */
 
@@ -107,13 +109,8 @@ nav a {
   height: 20vh;
   box-shadow: 5px 5px var(--primaryColor);
 }
-.text {
-  /* display: inline; */
-}
 .text p {
-  /* text-align: justify; */
   margin-right: 10%;
-  /* text-indent: 40px; */
 }
 .text p::first-letter {
   font-weight: bolder;
@@ -142,7 +139,13 @@ nav a {
   background-color: var(--primaryColor);
 }
 .text3 {
+  color: var(--secondaryColor);
   left: 0px;
+}
+.text1,
+.text2,
+.text4 {
+  color: var(--secondaryColor);
 }
 /* end of img link positioning and descriptions*/
 /* contact section */
@@ -155,8 +158,8 @@ nav a {
 }
 .links a {
   text-decoration: none;
-  color: var(--secondaryColor);
-  border-bottom: 3px solid var(--secondaryColor);
+  color: var(--thirdColor);
+  border-bottom: 3px solid var(--thirdColor);
   padding: 10px;
   margin-bottom: 40px;
 }
@@ -173,5 +176,11 @@ nav a {
   }
   .links a {
     margin: 0;
+  }
+  .foto {
+    float: none;
+  }
+  .text p {
+    text-align: justify;
   }
 }
