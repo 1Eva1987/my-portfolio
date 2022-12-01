@@ -82,7 +82,7 @@ nav a {
 }
 .page-section h2 {
   justify-self: flex-end;
-  margin: 0 20px;
+  margin: 0 20px 0 0;
   padding-right: 20px;
   border-right: 2px solid var(--secondaryColor);
 }
@@ -91,7 +91,7 @@ nav a {
 /* about me text */
 .text p {
   text-align: justify;
-  margin-right: 40px;
+  margin-right: 10%;
   text-indent: 40px;
 }
 .text p::first-letter {
@@ -124,3 +124,18 @@ nav a {
   left: 0px;
 }
 /* end of img link positioning and descriptions*/
+/* contact section */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.links a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  border-bottom: 3px solid var(--secondaryColor);
+  padding: 10px;
+  margin-bottom: 40px;
+}
