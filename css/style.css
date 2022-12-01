@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: darkcyan;
+  --primaryColor: rgb(3, 137, 137);
   --secondaryColor: black;
 }
 * {
@@ -12,6 +12,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  background: rgb(248, 248, 248);
 }
 
 h1,
@@ -67,10 +68,15 @@ nav a {
   align-items: flex-end;
 }
 .hero-banner h2 {
-  margin-left: 10px;
+  /* height: 20vh;
+  width: auto; */
+  padding: 5px 10px 0 10px;
   margin: 20px 50px;
-  background: var(--primaryColor);
+  background-color: var(--primaryColor);
+  font-weight: bold;
+  font-style: italic;
 }
+
 /* end of hero banner */
 
 /* grid with sections */
@@ -89,6 +95,14 @@ nav a {
 /* end of grid with sections */
 
 /* about me text */
+.foto {
+  float: left;
+  margin-right: 10px;
+  height: 20vh;
+}
+.text {
+  display: inline;
+}
 .text p {
   text-align: justify;
   margin-right: 10%;
@@ -139,3 +153,4 @@ nav a {
   padding: 10px;
   margin-bottom: 40px;
 }
+/* end of contact section */
