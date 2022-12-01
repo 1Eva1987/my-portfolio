@@ -87,6 +87,8 @@ nav a {
   grid-template-rows: auto auto auto;
 }
 .page-section h2 {
+  text-align: end;
+  padding-left: 10px;
   justify-self: flex-end;
   margin: 0 20px 0 0;
   padding-right: 20px;
@@ -155,3 +157,5 @@ nav a {
   margin-bottom: 40px;
 }
 /* end of contact section */
+/* @media screen and (max-width: 550px) {
+} */
