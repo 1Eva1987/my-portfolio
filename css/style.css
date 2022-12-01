@@ -2,6 +2,9 @@
   --primaryColor: rgb(3, 137, 137);
   --secondaryColor: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -54,6 +57,7 @@ nav a {
   text-transform: capitalize;
   border-bottom: 3px solid var(--primaryColor);
   font-weight: bold;
+  white-space: nowrap;
 }
 /* end of header with nav */
 
@@ -104,12 +108,12 @@ nav a {
   box-shadow: 5px 5px var(--primaryColor);
 }
 .text {
-  display: inline;
+  /* display: inline; */
 }
 .text p {
-  text-align: justify;
+  /* text-align: justify; */
   margin-right: 10%;
-  text-indent: 40px;
+  /* text-indent: 40px; */
 }
 .text p::first-letter {
   font-weight: bolder;
@@ -157,5 +161,17 @@ nav a {
   margin-bottom: 40px;
 }
 /* end of contact section */
-/* @media screen and (max-width: 550px) {
-} */
+@media screen and (max-width: 460px) {
+  .page-section h2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    align-self: flex-start;
+    font-size: 16px;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .links a {
+    margin: 0;
+  }
+}
