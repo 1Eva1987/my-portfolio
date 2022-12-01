@@ -94,11 +94,12 @@ nav a {
 }
 /* end of grid with sections */
 
-/* about me text */
+/* about me text and photo*/
 .foto {
   float: left;
   margin-right: 10px;
   height: 20vh;
+  box-shadow: 5px 5px var(--primaryColor);
 }
 .text {
   display: inline;
@@ -112,7 +113,7 @@ nav a {
   font-weight: bolder;
   font-size: 20px;
 }
-/* end about me text */
+/* end about me text and photo*/
 
 /* positioning img links and descriptions*/
 .first {
