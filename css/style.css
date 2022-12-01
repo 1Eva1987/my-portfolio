@@ -1,7 +1,7 @@
 :root {
-  --primaryColor: rgb(251, 251, 251, 0.5);
-  --secondaryColor: black;
-  --thirdColor: white;
+  --primaryColor: rgb(0, 139, 139, 0.7);
+  --secondaryColor: white;
+  --thirdColor: black;
 }
 html {
   scroll-behavior: smooth;
@@ -45,7 +45,7 @@ header {
   flex-wrap: wrap;
 }
 header h1 {
-  background-color: var(--thirdColor);
+  background-color: var(--primaryColor);
   margin: 10px 0 20px 0;
   padding: 0 5px 0 30px;
 }
@@ -77,7 +77,7 @@ nav a {
   /* color: var(--thirdColor); */
   padding: 5px 10px 0 10px;
   margin: 20px 50px;
-  background-color: var(--primaryColor);
+  background-color: rgb(255, 255, 255, 0.5);
   font-weight: bold;
   font-style: italic;
 }
@@ -96,7 +96,7 @@ nav a {
   text-align: end;
   padding-left: 10px;
   justify-self: flex-end;
-  margin: 0 20px 0 0;
+  margin: 0 20px 50px 0;
   padding-right: 20px;
   border-right: 2px solid var(--thirdColor);
 }
@@ -173,6 +173,7 @@ nav a {
   }
   .links {
     flex-direction: column;
+    align-self: flex-start;
   }
   .links a {
     margin: 0;
