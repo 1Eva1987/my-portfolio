@@ -25,6 +25,7 @@ h6 {
 
 p {
   margin: 0;
+  /* text-align: justify; */
   /* padding-right: 20px; */
 }
 /* header with nav */
@@ -86,6 +87,19 @@ nav a {
   border-right: 2px solid var(--secondaryColor);
 }
 /* end of grid with sections */
+
+/* about me text */
+.text p {
+  text-align: justify;
+  margin-right: 40px;
+  text-indent: 40px;
+}
+.text p::first-letter {
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* end about me text */
+
 /* positioning img links and descriptions*/
 .first {
   width: 90%;
@@ -93,7 +107,7 @@ nav a {
   border: 3px solid var(--primaryColor);
 }
 .next {
-  width: 45%;
+  width: 44.5%;
   height: auto;
   border: 3px solid var(--primaryColor);
 }
