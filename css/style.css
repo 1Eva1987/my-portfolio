@@ -75,14 +75,12 @@ nav a {
   align-items: flex-end;
 }
 .hero-banner h2 {
-  /* color: var(--thirdColor); */
   padding: 5px 10px 0 10px;
   margin: 20px 50px;
   background-color: rgb(255, 255, 255, 0.5);
   font-weight: bold;
   font-style: italic;
 }
-
 /* end of hero banner */
 
 /* grid with sections */
@@ -119,36 +117,64 @@ nav a {
 }
 /* end about me text and photo*/
 
-/* positioning img links and descriptions*/
-.first {
-  width: 90%;
-  height: auto;
-  border: 3px solid var(--primaryColor);
+/* work section */
+.work-section {
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
-.next {
-  width: 44.5%;
-  height: auto;
-  border: 3px solid var(--primaryColor);
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
 }
-.project {
-  display: inline;
-  position: relative;
+.item:first-child {
+  min-height: 300px;
+  flex-basis: 100%;
 }
-.project p {
-  position: absolute;
-  bottom: 30px;
+.item {
+  border: 5px solid var(--primaryColor);
+  flex-basis: 49%;
+  min-height: 150px;
+  max-height: 150px;
+  display: flex;
+  background-size: 100%;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--thirdColor);
+}
+.horiseon {
+  background-image: url("../images/screencapture-1eva1987-github-io-horiseon-improving-accssesibility-2022-12-02-09_27_30.png");
+  background-repeat: no-repeat;
+}
+.img-1 {
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-2 {
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-3 {
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-4 {
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.info-text {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  padding: 5px;
   background-color: var(--primaryColor);
 }
-.text3 {
-  color: var(--secondaryColor);
-  left: 0px;
-}
-.text1,
-.text2,
-.text4 {
-  color: var(--secondaryColor);
-}
-/* end of img link positioning and descriptions*/
+/* end of work section */
+
 /* contact section */
 .links {
   display: flex;
