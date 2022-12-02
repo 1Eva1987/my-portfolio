@@ -9,7 +9,6 @@ html {
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +17,6 @@ body {
   line-height: 1.5;
   background: var(--secondaryColor);
 }
-
 h1,
 h2,
 h3,
@@ -27,7 +25,6 @@ h5,
 h6 {
   margin: 0;
 }
-
 p {
   color: var(--thirdColor);
   margin: 0;
@@ -92,10 +89,10 @@ nav a {
 }
 .page-section h2 {
   color: var(--thirdColor);
-  text-align: end;
+  /* text-align: flex end; */
   padding-left: 10px;
   justify-self: flex-end;
-  margin: 0 20px 50px 0;
+  margin: 0 20px 0px 0;
   padding-right: 20px;
   border-right: 2px solid var(--thirdColor);
 }
@@ -120,7 +117,6 @@ nav a {
 /* work section */
 .work-section {
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 .container {
   display: flex;
@@ -146,6 +142,7 @@ nav a {
 .horiseon {
   background-image: url("../images/screencapture-1eva1987-github-io-horiseon-improving-accssesibility-2022-12-02-09_27_30.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .img-1 {
   background-image: url(../images/02-portfolio-1.jpg);
@@ -196,6 +193,7 @@ nav a {
     writing-mode: vertical-rl;
     text-orientation: upright;
     align-self: flex-start;
+    align-self: stretch;
     font-size: 16px;
   }
   .links {
@@ -212,4 +210,7 @@ nav a {
     text-align: justify;
     font-size: 14px;
   }
+}
+.contact {
+  margin-bottom: 30px;
 }
