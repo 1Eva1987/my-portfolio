@@ -28,8 +28,6 @@ h6 {
 p {
   color: var(--thirdColor);
   margin: 0;
-  /* text-align: justify; */
-  /* padding-right: 20px; */
 }
 /* header with nav */
 header {
@@ -89,7 +87,6 @@ nav a {
 }
 .page-section h2 {
   color: var(--thirdColor);
-  /* text-align: flex end; */
   padding-left: 10px;
   justify-self: flex-end;
   margin: 0 20px 0px 0;
@@ -105,9 +102,7 @@ nav a {
   height: 20vh;
   box-shadow: 5px 5px var(--primaryColor);
 }
-.text p {
-  margin-right: 10%;
-}
+
 .text p::first-letter {
   font-weight: bolder;
   font-size: 20px;
@@ -115,9 +110,6 @@ nav a {
 /* end about me text and photo*/
 
 /* work section */
-.work-section {
-  margin-right: 20px;
-}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -176,8 +168,7 @@ nav a {
 .links {
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .links a {
@@ -188,29 +179,69 @@ nav a {
   margin-bottom: 40px;
 }
 /* end of contact section */
-@media screen and (max-width: 460px) {
+.page-wrapper {
+  margin-right: 40px;
+}
+@media screen and (max-width: 979px) {
+  header h1 {
+    text-align: center;
+    flex-basis: 100%;
+    padding: 0;
+  }
+  .text p {
+    margin: 0;
+  }
+  nav {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+  nav a {
+    justify-items: center;
+    margin: 0 5px 0 5px;
+  }
+  .page-section {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
   .page-section h2 {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    align-self: flex-start;
-    align-self: stretch;
-    font-size: 16px;
+    color: var(--thirdColor);
+    padding-left: 0;
+    justify-self: flex-start;
+    justify-self: stretch;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid black;
+    border-right: none;
+  }
+  .page-wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 769px) {
+  header nav {
+    justify-content: space-around;
+  }
+  .hero-banner {
+    justify-content: center;
+  }
+  .item {
+    flex-basis: 100%;
   }
   .links {
     flex-direction: column;
-    align-self: flex-start;
+    align-items: flex-start;
   }
   .links a {
     margin: 0;
   }
-  .foto {
-    float: none;
+  .work-section,
+  .text,
+  .links {
+    margin-top: 20px;
   }
-  .text p {
-    text-align: justify;
-    font-size: 14px;
-  }
-}
-.contact {
-  margin-bottom: 30px;
 }
