@@ -178,6 +178,9 @@ nav a {
   padding: 10px;
   margin-bottom: 40px;
 }
+.links a:hover {
+  background-color: var(--primaryColor);
+}
 /* end of contact section */
 .page-wrapper {
   margin-right: 40px;
